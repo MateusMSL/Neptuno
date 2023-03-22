@@ -1,0 +1,656 @@
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #345989 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #43a4d1;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+
+    #nav_neptuno{
+
+        background-color: #4b8cc2;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        z-index: 22;
+        float: left;
+    }
+
+    #logo_nav{
+    margin-left: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    height: 70%;
+    border-radius: 100%;
+    width: 35px;
+    float: left;
+    }
+
+
+    .logo_website{
+
+        margin-top: 8px;
+        background-image: url(img/LogoNeptuno.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+    }
+
+    #title_nav{
+        width: 11.5%;
+        height: 50px;
+        font-size: 30px;
+        font-weight: bolder;
+        display: flex;
+        padding-left: 10px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        transition: 1s;
+        color: #ffffff00;
+        float: left;
+    }
+
+    .cursor_pointer:hover{ 
+        cursor: pointer;
+    }
+
+    #title_nav:hover{
+        color: #fff;
+    }
+
+    .font_save01{
+
+        margin-left: 20px;
+        width: 140px;
+        text-align: center;
+        float: left;
+        height: 100%;
+        padding-top: 10px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+
+    .font_save02{
+
+        margin-left: 10px;
+        text-align: center;
+        float: right;
+        height: 100%;
+        padding-top: 10px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+
+  
+  .hover_effect {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  
+  .hover_effect {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  
+  .hover_effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    height: 0.1em;
+    background: linear-gradient(80deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255)100%);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .hover_effect:hover::after,
+  .hover_effect:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+  
+  .hover_effect::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  .hover_effect:hover::after,
+  .hover_effect:focus::after{
+    transform: scale(1);
+  }
+
+  /**/
+
+  .carousel-img-01{
+
+    margin-top: 0px;
+    height: 330px;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-image: url(img/carousel_img_1.jpg);
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0.447);
+  }
+
+  .carousel-img-03{
+    margin-top: 0px;
+    height: 330px;
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-image: url(img/carousel_img_3.jpg);
+  }
+
+  .carousel-img-02{
+    margin-top: 0px;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/carousel_img_2.jpg);
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0.699);
+  }
+
+
+  .carousel-img-04{
+    margin-top: 0px;
+    height: 330px;
+    background-size: cover;
+    background-position-y: -175px;
+    background-repeat: no-repeat;
+    background-image: url(img/carousel_img_4.jpg);
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0.275);
+  }
+
+  .box-shadow{
+ 
+    box-shadow: 0px 4px 5px -4px rgba(0,0,0,0.75);
+  }
+
+
+  #sobre_nos{
+
+    height: auto;
+
+  }
+
+  #div_sobre{
+
+    height: 480px;
+    margin: 0 auto;
+  }
+
+  .container_about{
+
+    margin-left: 135px;
+    margin-bottom: 30px;
+    float: left;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .container_about2{
+
+    margin-right: 135px;
+    margin-bottom: 30px;
+    float: right;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .icons_about_div{
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .text_about_div{
+
+    margin-top: 40px;
+    margin-left: 10px;
+    float: left;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .icon_size{
+
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .fa-seedling{ color: #3dcf97; }
+  .fa-person-walking-with-cane{ color: #504a86; }
+  .fa-rocket{ color: #c27cd3; }
+  .fa-landmark{ color: #6b93ad; }
+/* PARTE DOS CURSOS */
+
+  #see_more{
+    float: right;
+    margin-right: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  #see_more a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  #see_more a:visited {
+    color: rgb(60, 104, 129);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  #see_more a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  #see_more a:active {
+    color: rgb(0, 162, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  #nossos_cursos{
+    height: 750px;
+  }
+
+  .font_save03{
+    margin-top: 50px;
+    height: 70px;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 10px;
+    color: #2b2c35;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+#div_cursos{
+
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 70px;
+}
+
+.div_curso_pequena{
+    float: left;
+    border-radius: 5px;
+    margin: 5px;
+    height: 48%;
+}
+
+.div_curso_grande{
+    float: right;
+    border-radius: 5px;
+    margin: 5px;
+    margin-right: 115px;
+    height: 98%;
+}
+
+#img_psicologia{
+
+    background-image: url(img/Psicologia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+#img_artes{
+
+    background-image: url(img/artes.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -130px;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+#img_medicina{
+
+    background-image: url(img/Medicina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+#img_direito{
+
+    background-image: url(img/Direito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+#img_cienciacomputacao{
+
+    background-image: url(img/cdc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+#img_psicologia:hover{ 
+    box-shadow: inset 0px 0px 0px 300px rgba(0, 0, 0, 0.823);
+}
+
+#img_cienciacomputacao:hover{
+    box-shadow: inset 0px 0px 0px 300px rgba(0, 0, 0, 0.823); 
+}
+#img_medicina:hover{
+    box-shadow: inset 0px 0px 0px 300px rgba(0, 0, 0, 0.823); 
+}
+#img_direito:hover{
+    box-shadow: inset 0px 0px 0px 300px rgba(0, 0, 0, 0.823); 
+}
+#img_artes:hover{
+    box-shadow: inset 0px 0px 0px 300px rgba(0, 0, 0, 0.823); 
+}
+
+.Titulo_cursos{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.Descricao_cursos{
+    
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Botoes_curso{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#info_psicologia{
+    transition: 1s;
+    opacity: 0;
+}
+#img_psicologia:hover #info_psicologia{
+    opacity: 1;
+}
+
+
+#info_medicina{
+    transition: 1s;
+    opacity: 0;
+}
+#img_medicina:hover #info_medicina{
+    opacity: 1;
+}
+
+#info_direito{
+    transition: 1s;
+    opacity: 0;
+}
+#img_direito:hover #info_direito{
+    opacity: 1;
+}
+
+#info_artes{
+    transition: 1s;
+    opacity: 0;
+}
+#img_artes:hover #info_artes{
+    opacity: 1;
+}
+
+
+#info_cdc{
+    transition: 1s;
+    opacity: 0;
+}
+#img_cienciacomputacao:hover #info_cdc{
+    opacity: 1;
+}
+
+.desativado{
+
+    color: rgba(255, 255, 255, 0.247);
+}
+
+/* PARTE DOS CURSOS */
+
+@media screen and (min-width:1279px) and (max-width: 1440px) {
+	.container_about{
+
+    margin-left: 100px;
+    margin-bottom: 30px;
+    float: left;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .container_about2{
+
+    margin-right: 100px;
+    margin-bottom: 30px;
+    float: right;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .div_curso_grande{
+    float: right;
+    border-radius: 5px;
+    margin: 5px;
+    margin-right: 64px;
+    height: 98%;
+}
+}
+
+@media screen and (min-width:768px) and (max-width: 884px) {
+	.container_about{
+
+    margin-left: 40px;
+    margin-bottom: 30px;
+    float: left;
+    width: 90%;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .container_about2{
+
+    margin-left: 40px;
+    margin-bottom: 30px;
+    float: left;
+    width: 90%;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .icons_about_div{
+    width: 100%;
+  }
+
+  .text_about_div{
+
+    text-align: center;
+  }
+
+  #div_cursos{
+    float: left;
+    border: 2px solid red;
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .Titulo_cursos{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .div_curso_grande{
+
+    float: left;
+    border-radius: 5px;
+    margin: 5px;
+    height: 48%;
+
+  }
+
+  #img_medicina{
+
+    background-image: url(img/Medicina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-position-y: -230px;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+
+.font_save01{
+
+  margin-left: 50px;
+  margin-right: 0px;
+  width: 150px;
+}
+
+.font_save02{
+
+  margin-right: 20px;
+}
+}
+
+@media screen and (min-width:320px) and (max-width: 428px) {
+	.container_about{
+
+    margin-left: 20px;
+    margin-bottom: 30px;
+    float: left;
+    width: 90%;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .container_about2{
+
+    margin-left: 20px;
+    margin-bottom: 30px;
+    float: left;
+    width: 90%;
+    border-radius: 20px;
+    min-height: 260px;
+    border: 3px solid #0000001a;
+  }
+
+  .icons_about_div{
+    width: 100%;
+  }
+
+  .text_about_div{
+
+    text-align: center;
+  }
+
+  #div_cursos{
+    float: left;
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .Titulo_cursos{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .div_curso_grande{
+
+    float: left;
+    border-radius: 5px;
+    margin: 5px;
+    min-height: 48%;
+
+  }
+
+  #img_medicina{
+
+    background-image: url(img/Medicina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-position-y: center;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0);
+}
+
+
+
+.font_save02{
+  margin-right: 0px;
+}
+
+.mobile_fix_01{ display: none; }
+.mobile_fix_02{ display: none; }
+.mobile_fix_03{ display: none; }
+.mobile_fix_04{ display: none; }
+
+
+
+
+
+}
